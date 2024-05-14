@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>מחשבון BMI</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>מחשבון BMI</h1>
+    </div>
+    <div>
+        <p>מדד גוף, או BMI, הוא כלי שעוזר לנו להבין אם משקל הגוף שלנו מתאים לגובה שלנו. הוא נותן לנו מידע חשוב על איך
+            לשמור על גוף בריא וחזק. כאשר ה-BMI שלנו נמצא בתחום שמתאים לגיל ולגובה שלנו, זה סימן טוב שאנחנו על הדרך
+            הנכונה
+            לשמור על גוף חזק ובריא.</p>
+    </div>
+    <div>
+        <input type="text" placeholder="משקל" id="weight">
+        <input type="text" placeholder="גובה" id="height">
+    </div>
+    <div>
+        <input readonly type="hidden" id="display">
+        <button id="send" onclick="calculate()">חשב</button>
+    </div>
+    <div>
+
+        <h3>לבנים ובנות עד גיל 20:</h3>
+        <p>
+            ה-BMI מחושב באופן שונה לילדים ונערים, כאשר משתמשים בגרפים שמתחשבים בגיל ובמין כדי לקבוע אם ה-BMI נמוך, תקין
+            או גבוה. התוצאות מוצגות כאחוזון המשווה לילדים אחרים באותו גיל ומין.<br>
+        </p>
+        <h3>לבנים ובנות מעל גיל 20:</h3>
+        <p>
+            אם מדד ה-BMI נמוך מ-18.5, זה נחשב לתת-משקל.<br>
+            אם ה-BMI נמצא בין 18.5 ל-24.9, זה נחשב לתחום התקין.<br>
+            אם ה-BMI נמצא בין 25 ל-29.9, זה נחשב לעודף משקל.<br>
+            אם ה-BMI הוא 30 ומעלה, זה נחשב להשמנת יתר.<br>
+            שימוש ב-BMI עבור מבוגרים מעל גיל 20 מאפשר לקבוע קטגוריות אלו בצורה יותר אחידה, ולא לפי אחוזונים כמו בילדים
+            ונערים.
+        </p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
