@@ -16,15 +16,15 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-h1, h3 {
+.headers {
     transition: color 0.3s ease;
 }
 
-h1:hover, h3:hover {
+.headers:hover {
     color: #00acc1;
 }
 
-div {
+.section {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #ffffff;
@@ -33,11 +33,11 @@ div {
     transition: box-shadow 0.3s ease;
 }
 
-div:hover {
+.section:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-input[type="text"], select {
+.input {
     width: calc(100% - 16px);
     padding: 8px;
     margin: 8px 0;
@@ -47,11 +47,7 @@ input[type="text"], select {
     transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus, select:focus {
-    border-color: #00bcd4;
-}
-
-button {
+.button {
     width: 100%;
     background-color: #00838f;
     color: white;
@@ -62,10 +58,19 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #00acc1;
 }
 
-p {
+.paragraph {
     line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
 }
